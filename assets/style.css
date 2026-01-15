@@ -112,3 +112,30 @@ a.no-underline:active {
   text-decoration: none;
 }
 a.no-underline { text-decoration: none !important; }
+
+
+
+
+details.abstract > summary {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 2px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  user-select: none;
+  list-style: none; /* helps in some browsers */
+}
+
+/* remove the default disclosure triangle (Chrome/Safari) */
+details.abstract > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.abstract[open] > summary {
+  border-color: #999;
+}
+
+details.abstract > p {
+  margin-top: 8px;
+}
