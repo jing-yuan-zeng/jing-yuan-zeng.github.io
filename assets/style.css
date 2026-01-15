@@ -117,3 +117,7 @@ a.no-underline { text-decoration: none !important; }
 
 .abstract-line { margin-left: 18px; }      /* tabs it right */
 .abstract-label { color: #777; }           /* gray */
+.abstract-text{
+  margin: 6px 0 14px 18px;
+  color: var(--muted);
+}
