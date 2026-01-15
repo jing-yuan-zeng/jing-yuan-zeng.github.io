@@ -115,51 +115,27 @@ a.no-underline { text-decoration: none !important; }
 
 
 
-.paper {
-  margin: 0 0 14px 0;       /* space between papers */
-}
 
-.paper-title {
-  margin: 0;
-}
-
-/* indent so it looks like part of the paper entry */
-details.paper-abstract {
-  margin-left: 18px;
-  margin-top: 4px;
-}
-
-/* make “Abstract” look like a small sub-link, not a heading */
-details.paper-abstract > summary {
+details.abstract > summary {
   display: inline-block;
   cursor: pointer;
   font-size: 0.9em;
-  color: #555;
-  text-decoration: underline;   /* optional */
-  list-style: none;
+  padding: 2px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  user-select: none;
+  list-style: none; /* helps in some browsers */
 }
 
-/* remove the default triangle */
-details.paper-abstract > summary::-webkit-details-marker {
+/* remove the default disclosure triangle (Chrome/Safari) */
+details.abstract > summary::-webkit-details-marker {
   display: none;
 }
 
-/* custom triangle, subtle */
-details.paper-abstract > summary::before {
-  content: "▸";
-  display: inline-block;
-  margin-right: 6px;
-  color: #777;
+details.abstract[open] > summary {
+  border-color: #999;
 }
 
-/* rotate when open */
-details.paper-abstract[open] > summary::before {
-  content: "▾";
-}
-
-.abstract-body {
-  margin-top: 6px;
-  padding-left: 14px;     /* indent abstract text a bit more */
-  border-left: 2px solid #e5e5e5;  /* subtle “tabbed” feel */
-  color: #444;
+details.abstract > p {
+  margin-top: 8px;
 }
