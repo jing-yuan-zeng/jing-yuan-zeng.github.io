@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+# About me
+
+Write your short “I’m X at Y, I study Z …” paragraph here.
+
+You can link your CV like this: [CV](assets/cv.pdf)
+
+Contact: your.email@domain.com
+
+# Research
+
+#### Paper title one
+*Status line (e.g., Submitted / R&R / Conference etc.).*  
+- [Abstract](#) (or paste abstract under a collapsible section if you want)
+
+#### Paper title two
+*Coauthors / status.*  
+- Short 1–2 line description or an abstract link
+
+# Teaching
+
+- Course / role / year
+
+# Other
+
+Whatever else you want.

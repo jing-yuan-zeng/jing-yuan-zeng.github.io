@@ -1,0 +1,73 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Layout: one-page two-column */
+.wrapper.onepage {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 320px;
+  flex: 0 0 320px;
+}
+
+.content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Sidebar styling */
+.site-title {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.site-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 18px 0 10px 0;
+  border-radius: 2px;
+}
+
+.site-description {
+  margin: 10px 0 8px 0;
+}
+
+.site-links {
+  margin: 0 0 18px 0;
+}
+
+.site-footer {
+  margin-top: 28px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Headings to match the “clean academic page” vibe */
+.content h1, .content h2, .content h3 {
+  margin-top: 28px;
+}
+
+.content h1:first-child {
+  margin-top: 0;
+}
+
+/* Make it responsive */
+@media (max-width: 900px) {
+  .wrapper.onepage {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .sidebar {
+    width: auto;
+    flex: 1 1 auto;
+  }
+}
