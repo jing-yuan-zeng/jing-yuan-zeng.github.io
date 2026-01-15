@@ -6,15 +6,14 @@ layout: default
 
 Write your short “I’m X at Y, I study Z …” paragraph here.
 
-You can link your CV like this: [CV](assets/cv.pdf)
-
+You can link your CV like this: [CV](/assets/cv.pdf)  
 Contact: your.email@domain.com
 
 # Research
 
 #### Paper title one
 *Status line (e.g., Submitted / R&R / Conference etc.).*  
-- [Abstract](#) (or paste abstract under a collapsible section if you want)
+- [Abstract](#)
 
 #### Paper title two
 *Coauthors / status.*  
