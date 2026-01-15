@@ -115,9 +115,29 @@ a.no-underline { text-decoration: none !important; }
 
 
 
-.abstract-line { margin-left: 18px; }      /* tabs it right */
-.abstract-label { color: #777; }           /* gray */
+.abstract { 
+  margin-left: 18px; 
+}
+
+.abstract-summary{
+  cursor: pointer;
+  user-select: none;
+  list-style: none;          /* helps in some browsers */
+  color: #777;               /* arrow + label same gray */
+  font-weight: 600;
+}
+
+/* remove default marker in Chrome/Safari */
+.abstract-summary::-webkit-details-marker { display: none; }
+
+/* arrow rotation when open */
+.abstract[open] .arrow{
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
 .abstract-text{
   margin: 6px 0 14px 18px;
-  color: var(--muted);
+  color: #777;
+  font-weight: 400;
 }
