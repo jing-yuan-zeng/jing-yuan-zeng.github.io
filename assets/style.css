@@ -124,7 +124,7 @@ a.no-underline { text-decoration: none !important; }
   user-select: none;
   list-style: none;          /* helps in some browsers */
   color: #777;               /* arrow + label same gray */
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* remove default marker in Chrome/Safari */
